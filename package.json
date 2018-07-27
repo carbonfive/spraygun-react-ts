@@ -36,7 +36,8 @@
     "test": "react-scripts test --env=jsdom",
     "pretest:coverage": "npm-run-all build:css",
     "test:coverage": "react-scripts test --env=jsdom --coverage",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm-run-all build"
   },
   "jest": {
     "collectCoverageFrom": [
