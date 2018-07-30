@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "babel-eslint": "^7.2.3",
+    "classnames": "^2.2.6",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-react-app": "^2.1.0",
