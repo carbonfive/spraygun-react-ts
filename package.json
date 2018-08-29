@@ -53,6 +53,10 @@
     "src/**/*.{js,jsx}": "eslint",
     "src/**/*.scss": "stylelint"
   },
+  "engines": {
+    "node": "8.11.4",
+    "yarn": "1.9.4"
+  },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
