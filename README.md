@@ -1,6 +1,6 @@
 # spraygun-react
 
-This is a Carbon Five-flavored convenience skeleton project for React. It based on create-react-app (not ejected) with the following additions:
+This is a Carbon Five-flavored convenience skeleton project for React. It is based on create-react-app (not ejected) with the following additions:
 
 - Styling via .scss with BEM conventions
 - Stylelint
@@ -10,10 +10,10 @@ This is a Carbon Five-flavored convenience skeleton project for React. It based 
 - Deployable to Heroku out of the box
 - Or deploy via docker using the included Dockerfile
 
-To get started, make sure you have Node and Yarn installed, and then generate your project like this:
+To get started, make sure you have Node 8.10+ and Yarn installed, and then generate your project like this:
 
 ```
-$ npx spraygun <project-directory> react
+$ npx spraygun -t react <project-directory>
 ```
 
 _Below this line is the README that will accompany your generated project._
