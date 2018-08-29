@@ -1,5 +1,7 @@
 # spraygun-react
 
+[![CircleCI](https://circleci.com/gh/carbonfive/spraygun-react/tree/master.svg?style=svg)](https://circleci.com/gh/carbonfive/spraygun-react/tree/master)
+
 This is a Carbon Five-flavored convenience skeleton project for React. It is based on create-react-app (not ejected) with the following additions:
 
 - Styling via .scss with BEM conventions
