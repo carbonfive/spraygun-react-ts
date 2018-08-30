@@ -18,6 +18,10 @@ To get started, make sure you have Node 8.10+ and Yarn installed, and then gener
 $ npx spraygun -t react <project-directory>
 ```
 
+If you'd like to use spraygun-react with a Rails API backend, follow this guide:
+
+> [Using spraygun-react with a Rails backend](./docs/how-to-use-with-rails-backend.md)
+
 _Below this line is the README that will accompany your generated project._
 
 ---
@@ -31,7 +35,7 @@ This is a React 16 app.
 ## Prerequisites
 
 - Node 8.11.4
-- Yarn 1.7.0
+- Yarn 1.9.4
 
 ## Quick start
 
