@@ -36,7 +36,11 @@ exports.setup = (projectDirectory, { chalk, shell }) => {
   removeBanner();
   shell.rm("-rf", "node_modules");
   shell.rm("-rf", ".git");
-  shell.exec("git init -q");
+
+  const isChildOfExistingRepo = fs.existsSync("../.git");
+  if (!isChildOfExistingRepo) {
+    shell.exec("git init -q");
+  }
   shell.exec("yarn install");
   shell.rm("-rf", ".spraygun.js");
   shell.rm("-rf", "LICENSE");
