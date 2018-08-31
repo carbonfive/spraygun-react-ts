@@ -30,15 +30,7 @@ $ cd my-project
 $ npx spraygun -t react client
 ```
 
-### 3. Remove the client/.git directory
-
-By default, spraygun initializes a git repository in the generated directory. This will conflict with the git repository that is already in place for the Rails app. It must be removed before proceeding.
-
-```
-$ rm -rf client/.git
-```
-
-### 4. Change the default port of the React app
+### 3. Change the default port of the React app
 
 In development, the React app runs on port 3000 by default. This conflicts with Rails, which also runs on that port. To avoid this conflict, configure the React app to use port 5000 instead.
 
@@ -57,7 +49,7 @@ $ yarn start
 
 Your browser should open to `http://localhost:5000`.
 
-### 5. Set up the development proxy
+### 4. Set up the development proxy
 
 The React development server (i.e. the one running on port 5000) can automatically proxy API requests from the React frontend to the Rails backend running on port 3000. This makes for a seamless development experience with no CORS configuration necessary.
 
@@ -67,7 +59,7 @@ Edit `client/package.json` and add the following top-level entry:
 "proxy": "http://localhost:3000"
 ```
 
-### 6. Add a root package.json
+### 5. Add a root package.json
 
 Adding a `package.json` in the root of the Rails project, provides a couple of nice conveniences:
 
@@ -112,7 +104,7 @@ You can now start both the server and the client with one command:
 $ yarn start
 ```
 
-### 7. Add a rake task to build React
+### 6. Add a rake task to build React
 
 When Rails is deployed (on Heroku or any other platform), the `assets:precompile` task is invoked. To ensure that the React frontend is deployed alongside the Rails backend, hook into the precompile step to build the React app and copy it into the appropriate place where Rails can serve it.
 
@@ -138,7 +130,7 @@ end
 
 Now when you deploy the Rails app, the React app will automatically be bundled with it and served from the same URL.
 
-### 8. If using Heroku, add the NodeJS buildpack
+### 7. If using Heroku, add the NodeJS buildpack
 
 If you are deploying to Heroku, you will need to notify Heroku that both the Ruby and NodeJS buildpacks are required. The React build process needs tools like `node` and `yarn` to be present. These are provided by the NodeJS buildpack.
 
@@ -158,7 +150,7 @@ $ heroku buildpacks
 2. heroku/ruby
 ```
 
-### 9. Deploy!
+### 8. Deploy!
 
 You are done!
 
