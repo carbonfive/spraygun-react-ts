@@ -129,6 +129,8 @@ namespace :react do
   end
 end
 
+# `task` will enhance the assets:precompile task if it is already defined.
+# So the existing sprockets behavior will continue to work.
 task "assets:precompile" do
   Rake::Task["react:build"].invoke
 end
