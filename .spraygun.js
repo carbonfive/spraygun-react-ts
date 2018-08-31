@@ -40,6 +40,7 @@ exports.setup = (projectDirectory, { chalk, shell }) => {
   shell.exec("yarn install");
   shell.rm("-rf", ".spraygun.js");
   shell.rm("-rf", "LICENSE");
+  shell.rm("-rf", "docs/how-to-use-with-rails-backend.md");
   shell.exec("git add -A .");
   shell.exec("git commit -n -q -m 'Init from spraygun template'");
 
@@ -67,6 +68,9 @@ exports.setup = (projectDirectory, { chalk, shell }) => {
 
     {cyan cd} ${projectDirectory}
     {cyan yarn start}
+
+  If you plan on integrating React with a {yellow Rails} backend, check out these docs:
+  {cyan https://github.com/carbonfive/spraygun-react/blob/master/docs}
 
   Enjoy your Carbon Five flavored React application!
 `
