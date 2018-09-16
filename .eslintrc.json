@@ -13,9 +13,7 @@
     "prettier/prettier": "error"
   },
   "extends": [
-    "react-app",
     "eslint:recommended",
-    "plugin:jest/recommended",
     "prettier"
   ]
 }
