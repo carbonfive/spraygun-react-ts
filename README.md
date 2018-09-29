@@ -1,6 +1,6 @@
 # spraygun-react-ts
 
-[![CircleCI](https://circleci.com/gh/carbonfive/spraygun-react/tree/master.svg?style=svg)](https://circleci.com/gh/carbonfive/spraygun-react/tree/master)
+[![CircleCI](https://circleci.com/gh/carbonfive/spraygun-react-ts/tree/master.svg?style=svg)](https://circleci.com/gh/carbonfive/spraygun-react-ts/tree/master)
 
 This is a Carbon Five-flavored convenience skeleton project for React with TypeScript. It is based on create-react-app-ts (not ejected) with the following additions:
 
