@@ -3,5 +3,8 @@
     "member-access": [true, "no-public"],
     "ordered-imports": false
   },
-  "extends": ["tslint-react", "tslint:recommended", "tslint-config-prettier"]
+  "extends": ["tslint-react", "tslint:recommended", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": ["node_modules/**/*.ts", "coverage/lcov-report/*.js"]
+  }
 }
