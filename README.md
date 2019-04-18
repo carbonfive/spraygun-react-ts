@@ -20,7 +20,7 @@ $ npx spraygun -t react-ts <project-directory>
 
 If you'd like to use spraygun-react-ts with a Rails API backend, follow this guide:
 
-> [Using spraygun-react with a Rails backend](./docs/how-to-use-with-rails-backend.md)
+> [Using spraygun-react with a Rails backend](https://github.com/carbonfive/spraygun-react/blob/master/docs/how-to-use-with-rails-backend.md)
 
 _Below this line is the README that will accompany your generated project._
 
