@@ -14,7 +14,7 @@ This is a Carbon Five-flavored convenience skeleton project for React with TypeS
 
 To get started, make sure you have Node 8.10+ and Yarn installed, and then generate your project like this:
 
-```
+```bash
 $ npx spraygun -t react-ts <project-directory>
 ```
 
@@ -41,13 +41,13 @@ This is a React 16 app.
 
 Install dependencies:
 
-```
+```bash
 yarn install
 ```
 
 Start the server:
 
-```
+```bash
 yarn start
 ```
 
