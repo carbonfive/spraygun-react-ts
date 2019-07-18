@@ -2,11 +2,11 @@
 
 [![CircleCI](https://circleci.com/gh/carbonfive/spraygun-react-ts/tree/master.svg?style=svg)](https://circleci.com/gh/carbonfive/spraygun-react-ts/tree/master)
 
-This is a Carbon Five-flavored convenience skeleton project for React with TypeScript. It is based on create-react-app-ts (not ejected) with the following additions:
+This is a Carbon Five-flavored convenience skeleton project for React. It is based on create-react-app (not ejected) with the following additions:
 
 - Styling via .scss with BEM conventions
 - Stylelint
-- TSLint/Prettier
+- ESLint/Prettier
 - Husky with lint-staged
 - CI testing via Circle CI
 - Deployable to Heroku out of the box
@@ -15,12 +15,16 @@ This is a Carbon Five-flavored convenience skeleton project for React with TypeS
 To get started, make sure you have Node 8.10+ and Yarn installed, and then generate your project like this:
 
 ```
-$ npx spraygun -t react-ts <project-directory>
+$ npx spraygun -t react <project-directory>
 ```
 
 If you'd like to use spraygun-react-ts with a Rails API backend, follow this guide:
 
-> [Using spraygun-react with a Rails backend](https://github.com/carbonfive/spraygun-react/blob/master/docs/how-to-use-with-rails-backend.md)
+> [Using spraygun-react-ts with a Rails backend](./docs/how-to-use-with-rails-backend.md)
+
+If you'd like to use spraygun-react-ts with Redux, here are potential file structures:
+
+> [Redux file structures](./docs/example-redux-file-structure.md)
 
 _Below this line is the README that will accompany your generated project._
 
@@ -34,8 +38,8 @@ This is a React 16 app.
 
 ## Prerequisites
 
-- Node 8.12.0
-- Yarn 1.9.4
+- Node 10.15.0
+- Yarn 1.12.1 or higher
 
 ## Quick start
 
@@ -57,7 +61,7 @@ This will launch the app at:
 
 ## Task reference
 
-- **`yarn start`** starts the development server listing on port 3000. Changes to .ts or .scss files automatically refresh in the browser.
+- **`yarn start`** starts the development server listing on port 3000. Changes to .js or .scss files automatically refresh in the browser.
 - **`yarn test`** runs tests in "watch" mode, automatically focusing on tests or code that were modified since the last commit. Press the `a` key after the test runner has started to watch all tests in the project.
 - **`yarn test:coverage`** runs all tests, prints coverage stats, and then exits.
 - **`yarn lint`** runs all ESLint checks and then exits.

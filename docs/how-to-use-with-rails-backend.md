@@ -1,6 +1,6 @@
-# Using spraygun-react with a Rails backend
+# Using spraygun-react-ts with a Rails backend
 
-This document explains how to create a single repository that contains a Rails backend and a React frontend, where the frontend is generated with spraygun-react. The result will be:
+This document explains how to create a single repository that contains a Rails backend and a React frontend, where the frontend is generated with spraygun-react-ts. The result will be:
 
 - a single app that deploys to Heroku
 - can be run in development via a single `yarn start` command
@@ -85,8 +85,8 @@ Create a `package.json` at the root of the Rails project with these contents:
     "npm-run-all": "^4.1.3"
   },
   "engines": {
-    "node": "8.12.0",
-    "yarn": "1.9.4"
+    "node": "10.15.0",
+    "yarn": ">=1.12.1"
   },
   "cacheDirectories": ["node_modules", "client/node_modules"]
 }
@@ -158,6 +158,35 @@ Deploy your app as usual. Don't forget to commit your changes first.
 
 ```
 $ git add .
-$ git commit -m "Add React frontend with spraygun-react"
+$ git commit -m "Add React frontend with spraygun-react-ts"
 $ git push heroku master
+```
+
+### 9. Debugging Rails
+
+The current stack suppresses the output from the Rails server, which interferes with debugging the back-end.
+
+There's probably a few ways to get around this and here's two of them.
+
+The first is if you just want passive logging, you can just run this command in a different console window:
+
+```
+tail -f log/development.log
+```
+
+And use `logger.info` instead of `puts` for output.
+
+If you need an actual debugger, start the rails app and the client app separately.
+
+Run the Rails server:
+
+```
+rails s
+```
+
+Open a new console and start the client app:
+
+```
+cd client
+yarn start
 ```

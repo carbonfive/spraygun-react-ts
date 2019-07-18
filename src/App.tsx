@@ -1,21 +1,26 @@
-import * as React from "react";
+import React from "react";
 import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App__header">
-          <img src={logo} className="App__logo" alt="logo" />
-          <h1 className="App__title">Welcome to React</h1>
-        </header>
-        <p className="App__intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
+const App: React.FC = () => {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
         </p>
-      </div>
-    );
-  }
-}
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+};
 
 export default App;
