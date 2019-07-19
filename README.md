@@ -20,11 +20,11 @@ $ npx spraygun -t react <project-directory>
 
 If you'd like to use spraygun-react-ts with a Rails API backend, follow this guide:
 
-> [Using spraygun-react-ts with a Rails backend](./docs/how-to-use-with-rails-backend.md)
+> [Using spraygun-react with a Rails backend](https://github.com/carbonfive/spraygun-react/blob/master/docs/how-to-use-with-rails-backend.md)
 
 If you'd like to use spraygun-react-ts with Redux, here are potential file structures:
 
-> [Redux file structures](./docs/example-redux-file-structure.md)
+> [Redux file structures](https://github.com/carbonfive/spraygun-react/blob/master/docs/example-redux-file-structure.md)
 
 _Below this line is the README that will accompany your generated project._
 
