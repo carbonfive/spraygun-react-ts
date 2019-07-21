@@ -20,7 +20,7 @@ exports.setup = (projectDirectory, { chalk, shell }) => {
     [/nodejs \d+\.\d+\.\d+/, `nodejs ${nodeVersion}`, ".tool-versions"],
     [/node:\d+\.\d+\.\d+/, `node:${nodeVersion}`, ".circleci/config.yml"],
     [/Node \d+\.\d+\.\d+/gi, `Node ${nodeVersion}`, "README.md"],
-    [/"yarn": "\d+\.\d+\.\d+"/, `"yarn": "${yarnVersion}"`, "package.json"],
+    [/"yarn": ">=\d+\.\d+\.\d+"/, `"yarn": ">=${yarnVersion}"`, "package.json"],
     [/yarn@\d+\.\d+\.\d+/, `yarn@${yarnVersion}`, "Dockerfile"],
     [
       /YARN_VERSION=\d+\.\d+\.\d+/,
@@ -28,7 +28,8 @@ exports.setup = (projectDirectory, { chalk, shell }) => {
       ".circleci/config.yml"
     ],
     [/Yarn \d+\.\d+\.\d+/gi, `Yarn ${yarnVersion}`, "README.md"],
-    [/<title>.*?<\/title>/, `<title>${appName}</title>`, "public/index.html"]
+    [/<title>.*?<\/title>/, `<title>${appName}</title>`, "public/index.html"],
+    [/^yarn.lock$/, "", ".gitignore"]
   ];
 
   shell.cd(projectDirectory);
@@ -44,7 +45,7 @@ exports.setup = (projectDirectory, { chalk, shell }) => {
   shell.exec("yarn install");
   shell.rm("-rf", ".spraygun.js");
   shell.rm("-rf", "LICENSE");
-  shell.rm("-rf", "docs/how-to-use-with-rails-backend.md");
+  shell.rm("-rf", "docs/*");
   shell.exec("git add -A .");
   shell.exec("git commit -n -q -m 'Init from spraygun template'");
 
@@ -74,7 +75,7 @@ exports.setup = (projectDirectory, { chalk, shell }) => {
     {cyan yarn start}
 
   If you plan on integrating React with a {yellow Rails} backend, check out these docs:
-  {cyan https://github.com/carbonfive/spraygun-react/blob/master/docs}
+  {cyan https://github.com/carbonfive/spraygun-react-ts/blob/master/docs}
 
   Enjoy your Carbon Five flavored React application!
 `
