@@ -15,7 +15,7 @@ This is a Carbon Five-flavored convenience skeleton project for React. It is bas
 To get started, make sure you have Node 8.10+ and Yarn installed, and then generate your project like this:
 
 ```
-$ npx spraygun -t react <project-directory>
+$ npx spraygun -t react-ts <project-directory>
 ```
 
 If you'd like to use spraygun-react-ts with a Rails API backend, follow this guide:
