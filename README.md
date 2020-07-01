@@ -1,6 +1,6 @@
 # spraygun-react-ts
 
-[![CircleCI](https://circleci.com/gh/carbonfive/spraygun-react-ts/tree/master.svg?style=svg)](https://circleci.com/gh/carbonfive/spraygun-react-ts/tree/master)
+[![CircleCI](https://circleci.com/gh/carbonfive/spraygun-react-ts/tree/main.svg?style=svg)](https://circleci.com/gh/carbonfive/spraygun-react-ts/tree/main)
 
 This is a Carbon Five-flavored convenience skeleton project for React. It is based on create-react-app (not ejected) with the following additions:
 
@@ -20,11 +20,11 @@ $ npx spraygun -t react-ts <project-directory>
 
 If you'd like to use spraygun-react-ts with a Rails API backend, follow this guide:
 
-> [Using spraygun-react with a Rails backend](https://github.com/carbonfive/spraygun-react/blob/master/docs/how-to-use-with-rails-backend.md)
+> [Using spraygun-react with a Rails backend](https://github.com/carbonfive/spraygun-react/blob/main/docs/how-to-use-with-rails-backend.md)
 
 If you'd like to use spraygun-react-ts with Redux, here are potential file structures:
 
-> [Redux file structures](https://github.com/carbonfive/spraygun-react/blob/master/docs/example-redux-file-structure.md)
+> [Redux file structures](https://github.com/carbonfive/spraygun-react/blob/main/docs/example-redux-file-structure.md)
 
 _Below this line is the README that will accompany your generated project._
 
