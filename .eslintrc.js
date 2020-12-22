@@ -1,26 +1,26 @@
-{
-  "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "jest", "prettier"],
-  "rules": {
+module.exports = {
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint", "jest", "prettier"],
+  rules: {
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
-        "args": "after-used",
-        "argsIgnorePattern": "^_",
-        "varsIgnorePattern": "^_"
-      }
+        args: "after-used",
+        argsIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+      },
     ],
     "no-var": "error",
     "prettier/prettier": "error",
     "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/explicit-member-accessibility": "off"
+    "@typescript-eslint/explicit-member-accessibility": "off",
   },
-  "extends": [
+  extends: [
     "react-app",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:jest/recommended",
     "prettier/@typescript-eslint",
-    "prettier"
-  ]
-}
+    "prettier",
+  ],
+};

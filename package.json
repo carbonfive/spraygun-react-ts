@@ -41,7 +41,7 @@
     "build": "react-scripts build",
     "lint": "npm-run-all -c lint:*",
     "lint:eslint": "eslint 'src/**/*.{ts,tsx}'",
-    "lint:stylelint": "stylelint src/**/*.scss",
+    "lint:stylelint": "stylelint 'src/**/*.scss'",
     "lint:prettier": "prettier --write **/*.{ts,tsx,json,scss,md}",
     "test": "react-scripts test",
     "test:coverage": "react-scripts test --env=jsdom --coverage",
