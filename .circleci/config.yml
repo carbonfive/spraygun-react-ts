@@ -10,6 +10,7 @@ jobs:
     steps:
       - checkout
       - node/with-cache:
+          cache-version: v2
           steps:
             - run: yarn install
   lint:
@@ -19,6 +20,7 @@ jobs:
     steps:
       - checkout
       - node/with-cache:
+          cache-version: v2
           steps:
             - run: yarn lint
   unit_tests:
@@ -28,6 +30,7 @@ jobs:
     steps:
       - checkout
       - node/with-cache:
+          cache-version: v2
           steps:
             - run:
                 name: yarn test
