@@ -6,31 +6,28 @@ jobs:
   install_deps:
     executor:
       name: node/default
-      tag: "14.16.1"
+      tag: "14.16.0"
     steps:
       - checkout
       - node/with-cache:
-          cache-version: v2
           steps:
             - run: yarn install
   lint:
     executor:
       name: node/default
-      tag: "14.16.1"
+      tag: "14.16.0"
     steps:
       - checkout
       - node/with-cache:
-          cache-version: v2
           steps:
             - run: yarn lint
   unit_tests:
     executor:
       name: node/default
-      tag: "14.16.1"
+      tag: "14.16.0"
     steps:
       - checkout
       - node/with-cache:
-          cache-version: v2
           steps:
             - run:
                 name: yarn test

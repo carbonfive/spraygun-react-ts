@@ -1,9 +1,8 @@
-import React from "react";
 import logo from "./logo.svg";
 import "./App.scss";
-import Counter from "./components/Counter";
+import Counter from "components/Counter";
 
-const App: React.FC = () => {
+const App = (): JSX.Element => {
   return (
     <div className="App">
       <header className="App__header">

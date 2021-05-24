@@ -1,24 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Counter.scss";
 
-export default class Counter extends React.Component<{}, { count: number }> {
-  constructor(props: {}) {
-    super(props);
-    this.state = { count: 0 };
-  }
+const Counter = (): JSX.Element => {
+  const [count, setCount] = useState(0);
 
-  increment = () => {
-    this.setState(state => ({ ...state, count: state.count + 1 }));
-  };
+  return (
+    <div className="Counter">
+      An example stateful component.
+      <button className="Counter__button" onClick={() => setCount(count + 1)}>
+        {count}
+      </button>
+    </div>
+  );
+};
 
-  render(): JSX.Element {
-    return (
-      <div className="Counter">
-        An example stateful component.
-        <button className="Counter__button" onClick={this.increment}>
-          {this.state.count}
-        </button>
-      </div>
-    );
-  }
-}
+export default Counter;

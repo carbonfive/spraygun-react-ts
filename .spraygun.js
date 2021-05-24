@@ -77,7 +77,7 @@ exports.setup = (projectDirectory, { chalk, shell }) => {
     {cyan yarn start}
 
   If you plan on integrating React with a {yellow Rails} backend, check out these docs:
-  {cyan https://github.com/carbonfive/spraygun-react-ts/blob/main/docs}
+  {cyan https://github.com/carbonfive/spraygun-react/blob/main/docs}
 
   Enjoy your Carbon Five flavored React application!
 `
