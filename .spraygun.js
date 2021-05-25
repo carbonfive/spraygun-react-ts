@@ -29,7 +29,6 @@ exports.setup = (projectDirectory, { chalk, shell }) => {
     ],
     [/Yarn \d+\.\d+\.\d+/gi, `Yarn ${yarnVersion}`, "README.md"],
     [/<title>.*?<\/title>/, `<title>${appName}</title>`, "public/index.html"],
-    [/^yarn.lock$/, "", ".gitignore"],
   ];
 
   shell.cd(projectDirectory);
