@@ -38,7 +38,7 @@ This is a React app written in TypeScript.
 
 ## Prerequisites
 
-- Node 14.17.0
+- Node 14 (most recent minor version)
 - Yarn 1.12.1 or higher
 
 ## Quick start
