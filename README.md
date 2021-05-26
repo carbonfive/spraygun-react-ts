@@ -34,11 +34,11 @@ _Below this line is the README that will accompany your generated project._
 
 # app-prototype
 
-This is a React 16 app.
+This is a React app written in TypeScript.
 
 ## Prerequisites
 
-- Node 14.16.0
+- Node 14.17.0
 - Yarn 1.12.1 or higher
 
 ## Quick start
