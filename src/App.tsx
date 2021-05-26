@@ -9,7 +9,8 @@ const App = (): JSX.Element => {
         <Counter />
         <img src={logo} className="App__logo" alt="logo" />
         <p>
-          Edit <code className="App__code">src/App.js</code> and save to reload.
+          Edit <code className="App__code">src/App.tsx</code> and save to
+          reload.
         </p>
         <a
           className="App__link"
