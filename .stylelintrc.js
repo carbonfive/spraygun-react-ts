@@ -1,11 +1,26 @@
 module.exports = {
-  plugins: ["stylelint-declaration-use-variable"],
+  plugins: [
+    "stylelint-declaration-strict-value"
+  ],
   extends: ["stylelint-config-standard", "stylelint-config-recommended-scss"],
   rules: {
     "declaration-empty-line-before": null,
     "declaration-colon-newline-after": null,
     "declaration-no-important": true,
     "max-nesting-depth": 1,
+    "scale-unlimited/declaration-strict-value": [
+      "/color/",
+      {
+        disableFix: true,
+        ignoreValues: [
+          "currentcolor",
+          "inherit",
+          "initial",
+          "transparent",
+          "unset",
+        ],
+      },
+    ],
     "scss/at-function-pattern": [
       "^[a-z0-9]+(-[a-z0-9]+)*$",
       {
@@ -45,21 +60,6 @@ module.exports = {
     "selector-max-compound-selectors": 1,
     "selector-max-id": 0,
     "selector-no-qualifying-type": true,
-    "sh-waqar/declaration-use-variable": [
-      [
-        "/color/",
-        {
-          ignoreValues: [
-            "/\\w+\\.\\$.+/",
-            "currentcolor",
-            "inherit",
-            "initial",
-            "transparent",
-            "unset",
-          ],
-        },
-      ],
-    ],
     "string-quotes": "double",
     "value-list-comma-newline-after": null,
   },
