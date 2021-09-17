@@ -1,6 +1,12 @@
 module.exports = {
   parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint", "jest", "prettier", "testing-library"],
+  plugins: [
+    "@typescript-eslint",
+    "jest",
+    "jsx-a11y",
+    "prettier",
+    "testing-library",
+  ],
   rules: {
     "@typescript-eslint/no-unused-vars": [
       "error",
@@ -20,6 +26,7 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:jest/recommended",
+    "plugin:jsx-a11y/recommended",
     "plugin:testing-library/react",
     "prettier",
   ],
