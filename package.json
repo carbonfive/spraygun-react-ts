@@ -37,6 +37,10 @@
     "stylelint-declaration-strict-value": "^1.7.12",
     "stylelint-scss": "^3.21.0"
   },
+  "resolutions": {
+    "@typescript-eslint/typescript-estree": "^5.2.0",
+    "caniuse-lite": "^1.0.30001272"
+  },
   "scripts": {
     "prepare": "husky install",
     "prestart": "node bin/pre-start",
