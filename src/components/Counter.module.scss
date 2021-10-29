@@ -1,11 +1,11 @@
 @use "theme/colors.scss";
 @use "theme/typography.scss";
 
-.Counter {
+.container {
   @include typography.body-text;
 }
 
-.Counter__button {
+.button {
   @include typography.body-text;
 
   align-items: center;
