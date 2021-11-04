@@ -1,11 +1,11 @@
 @use "theme/colors.scss";
 @use "theme/typography.scss";
 
-.App {
+.container {
   text-align: center;
 }
 
-.App__logo {
+.logo {
   height: 40vmin;
   pointer-events: none;
 
@@ -14,7 +14,7 @@
   }
 }
 
-.App__header {
+.header {
   @include typography.headline-text;
 
   background-color: colors.$gray-28;
@@ -26,11 +26,11 @@
   color: colors.$white;
 }
 
-.App__code {
+.code {
   font-family: typography.$font-monospace;
 }
 
-.App__link {
+.link {
   color: colors.$blue;
 }
 

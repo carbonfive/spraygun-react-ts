@@ -4,7 +4,7 @@
 
 This is a Carbon Five-flavored convenience skeleton project for React. It is based on create-react-app (not ejected) with the following additions:
 
-- Styling via .scss with BEM conventions
+- Styling via SCSS modules
 - Stylelint
 - ESLint/Prettier
 - Husky with lint-staged
