@@ -12,19 +12,13 @@ This is a Carbon Five-flavored convenience skeleton project for React. It is bas
 - Deployable to Heroku out of the box
 - Or deploy via docker using the included Dockerfile
 
-To get started, make sure you have Node 10+ and Yarn installed, and then generate your project like this:
+To get started, make sure you have Node 16 and Yarn installed, and then generate your project like this:
 
 ```
 $ npx spraygun -t react-ts <project-directory>
 ```
 
-If you'd like to use spraygun-react-ts with a Rails API backend, follow this guide:
-
-> [Using spraygun-react with a Rails backend](https://github.com/carbonfive/spraygun-react/blob/main/docs/how-to-use-with-rails-backend.md)
-
-If you'd like to use spraygun-react-ts with Redux, here are potential file structures:
-
-> [Redux file structures](https://github.com/carbonfive/spraygun-react/blob/main/docs/example-redux-file-structure.md)
+💡 If you'd like to use spraygun-react-ts with with Rails, start by generating a Rails project with [raygun](https://github.com/carbonfive/raygun), and follow the [instructions for enabling React with TypeScript](https://github.com/carbonfive/raygun#react-with-typescript) in Rails. From there, you can cherry-pick files and patterns from this template into your React frontend in `app/javascript/`.
 
 _Below this line is the README that will accompany your generated project._
 
