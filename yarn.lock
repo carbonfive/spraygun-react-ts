@@ -1724,10 +1724,10 @@
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^8.0.0"
 
-"@testing-library/user-event@^13.4.1":
-  version "13.4.1"
-  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-13.4.1.tgz#8d9e73bcc7be09560b4c0ffbb6842ac43bc80ed2"
-  integrity sha512-WcnVwi96MmFsHLMNvBz03aPMVDU3UOgucXcn85fNXKKdtd7CHi2NAgE3hASt157yTB9krym0ikFVKbqYghKRCg==
+"@testing-library/user-event@^13.5.0":
+  version "13.5.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-13.5.0.tgz#69d77007f1e124d55314a2b73fd204b333b13295"
+  integrity sha512-5Kwtbo3Y/NowpkbRuSepbyMFkZmHgD+vPzYB/RJ4oxt5Gj/avFFBYjhw27cqSVPVw/3a67NK1PbiIr9k4Gwmdg==
   dependencies:
     "@babel/runtime" "^7.12.5"
 
@@ -1896,10 +1896,10 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
 
-"@types/react-dom@^17.0.10":
-  version "17.0.10"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.10.tgz#d6972ec018d23cf22b99597f1289343d99ea9d9d"
-  integrity sha512-8oz3NAUId2z/zQdFI09IMhQPNgIbiP8Lslhv39DIDamr846/0spjZK0vnrMak0iB8EKb9QFTTIdg2Wj2zH5a3g==
+"@types/react-dom@^17.0.11":
+  version "17.0.11"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.11.tgz#e1eadc3c5e86bdb5f7684e00274ae228e7bcc466"
+  integrity sha512-f96K3k+24RaLGVu/Y2Ng3e1EbZ8/cVJvypZWd7cy0ofCBaf2lcM46xNhycMZ2xGwbBjRql7hOlZ+e2WlJ5MH3Q==
   dependencies:
     "@types/react" "*"
 
@@ -10402,10 +10402,10 @@ sass-loader@^10.0.5:
     schema-utils "^3.0.0"
     semver "^7.3.2"
 
-sass@^1.43.2:
-  version "1.43.2"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.43.2.tgz#c02501520c624ad6622529a8b3724eb08da82d65"
-  integrity sha512-DncYhjl3wBaPMMJR0kIUaH3sF536rVrOcqqVGmTZHQRRzj7LQlyGV7Mb8aCKFyILMr5VsPHwRYtyKpnKYlmQSQ==
+sass@^1.43.4:
+  version "1.43.4"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.43.4.tgz#68c7d6a1b004bef49af0d9caf750e9b252105d1f"
+  integrity sha512-/ptG7KE9lxpGSYiXn7Ar+lKOv37xfWsZRtFYal2QHNigyVQDx685VFT/h7ejVr+R8w7H4tmUgtulsKl5YpveOg==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
 
@@ -11200,10 +11200,10 @@ stylelint-config-standard@^22.0.0:
   dependencies:
     stylelint-config-recommended "^5.0.0"
 
-stylelint-declaration-strict-value@^1.7.12:
-  version "1.7.12"
-  resolved "https://registry.yarnpkg.com/stylelint-declaration-strict-value/-/stylelint-declaration-strict-value-1.7.12.tgz#a4ff5d6cfc955c91f2dbe1b75bd35da99dd35d02"
-  integrity sha512-SHI5mHtDksXtiMFfEspm4VoTRVIQ7pp/qkDjZvwV/FTUWmjfLCo7EkWlrCKJS0+kdxrD/YamFFdK8pGJECQamg==
+stylelint-declaration-strict-value@^1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/stylelint-declaration-strict-value/-/stylelint-declaration-strict-value-1.8.0.tgz#d14f368d5974085896d6573cab7c82ad4f415f57"
+  integrity sha512-0+DbPQMgqomlBG+uycI3PZ1BzjJ7mJA065Lx+iTg9tlmjBD36f3ZaIq1ggRZQitE0w+KcbXGzFt6axR1LIP2hw==
   dependencies:
     css-values "^0.1.0"
     shortcss "^0.1.3"
