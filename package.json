@@ -38,7 +38,7 @@
     "stylelint-scss": "^3.21.0"
   },
   "resolutions": {
-    "@typescript-eslint/typescript-estree": "^5.2.0",
+    "@typescript-eslint/typescript-estree": "^5.6.0",
     "caniuse-lite": "^1.0.30001272"
   },
   "scripts": {
