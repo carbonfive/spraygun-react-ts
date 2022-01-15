@@ -1,6 +1,7 @@
+@use "sass:color";
 $blue: #61dafb;
-$blue-darker: darken($blue, 30%);
-$blue-lighter: lighten($blue, 5%);
+$blue-darker: color.adjust($blue, $lightness: -30%);
+$blue-lighter: color.adjust($blue, $lightness: 5%);
 
 $white: #fff;
 $gray-28: #282c34;
