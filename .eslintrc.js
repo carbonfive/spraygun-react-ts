@@ -23,6 +23,7 @@ module.exports = {
   },
   extends: [
     "react-app",
+    "react-app/jest",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:jest/recommended",
