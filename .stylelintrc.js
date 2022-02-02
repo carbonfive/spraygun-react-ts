@@ -44,5 +44,6 @@ module.exports = {
     "selector-no-qualifying-type": true,
     "string-quotes": "double",
     "value-list-comma-newline-after": null,
+    "scss/comment-no-empty": null,
   },
 };
