@@ -14,7 +14,7 @@
     "classnames": "^2.3.1",
     "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-jest": "^25.3.4",
+    "eslint-plugin-jest": "^26.1.4",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-testing-library": "^5.2.1",
     "husky": "^7.0.4",
