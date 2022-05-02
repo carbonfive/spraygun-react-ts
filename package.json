@@ -58,7 +58,7 @@
     "src/**/*.scss": "stylelint"
   },
   "engines": {
-    "node": "^16.14.1",
+    "node": "^16.15.0",
     "yarn": ">=1.12.1"
   },
   "jest": {
