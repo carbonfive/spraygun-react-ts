@@ -27,7 +27,7 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "sass": "^1.52.3",
-    "serve": "^13.0.2",
+    "serve": "^14.0.0",
     "shelljs": "^0.8.5",
     "stylelint": "^14.9.1",
     "stylelint-config-recommended-scss": "^7.0.0",
